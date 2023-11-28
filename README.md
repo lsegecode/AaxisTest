@@ -30,9 +30,10 @@ symfony serve
 
 
 Now, your Symfony application should be up and running. Access it in your browser at http://127.0.0.1:1000/index.php/product/list
----
-# Interact with the API with Postman
 
+
+# Interact with the API with Postman
+---
 
 Open Postman:
 If you don't have Postman installed, download and install it from https://www.postman.com/.
