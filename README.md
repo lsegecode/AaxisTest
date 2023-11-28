@@ -38,20 +38,20 @@ Now, your Symfony application should be up and running. Access it in your browse
 Open Postman:
 If you don't have Postman installed, download and install it from https://www.postman.com/.
 
-GET Endpoint:
+## GET Endpoint:
 
 URL: http://127.0.0.1:1000/index.php/product/list
 Method: GET
 Headers: (No specific headers needed for this endpoint)
-POST Endpoint:
+
+## POST Endpoint:
 
 URL: http://127.0.0.1:1000/index.php/product/load
 Method: POST
 Headers:
 Content-Type: application/json
 Body (raw JSON):
-json
-Copy code
+```json
 [
   {
     "sku": "ABC123",
@@ -64,7 +64,9 @@ Copy code
     "description": "Another test product"
   }
 ]
-PUT Endpoint:
+```
+
+## PUT Endpoint:
 
 URL: http://127.0.0.1:1000/index.php/product/update
 Method: PUT
@@ -72,7 +74,7 @@ Headers:
 Content-Type: application/json
 Body (raw JSON):
 json
-Copy code
+```json
 [
     {
         "sku": "ABC123",
@@ -80,4 +82,5 @@ Copy code
         "description": "Updated product description"
     }
 ]
+```
 Make sure your Symfony application is running (symfony serve) and Docker containers are up and running. Adjust the URLs accordingly if your setup uses a different host or port.
