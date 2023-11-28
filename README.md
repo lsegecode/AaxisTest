@@ -25,7 +25,11 @@ composer install
 4. **Set Up SSH for Docker:**
 make ssh-be
 
-5. **Serve the symfony Application:**
+5. **Run Database Migrations:**
+php bin/console doctrine:migrations:migrate
+
+
+6. **Serve the symfony Application:**
 symfony serve
 
 
